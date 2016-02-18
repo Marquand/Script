@@ -67,6 +67,10 @@ git commit -m "'$now' - '$COMMENTAIRE' "
 git push --set-upstream $ADRESS master
 git merge master
 
+
+echo "--"
+echo -e "-- L'url du repository -> [\033[37m' $ADRESS '\033[0m]"
+echo "--"
 # Setup remote repo
 
 echo "---------------------------------------------------------"
