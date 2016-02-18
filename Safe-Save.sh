@@ -75,7 +75,7 @@ echo "---------------------------------------------------------"
 
 echo "--"
 echo "-- Création de votre BackUp sur le serveur"
-echo -e "-- [\033[37m$USER@$HOST/$GIT_PATH/$PROJET/$NOW\033[0m]"
+echo -e "-- [\033[37m$USER@$HOST$GIT_PATH$PROJET/$NOW\033[0m]"
 echo "--"
 
 
