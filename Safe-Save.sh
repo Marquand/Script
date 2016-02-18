@@ -44,7 +44,7 @@ echo "---------------------------------------------------------"
 
 echo -e -n "Entrer le nom de votre compte [\033[35mGithub\033[0m] :"
 read COMPTE
-echo -e -n "Entrer le nom du Repository du compte [\033[35m'$COMPTE'\033[0m] dans le qu'elle vous souhaitez faire une sauvegarge :"
+echo -e -n "Entrer le nom du Repository de [\033[35m'$COMPTE'\033[0m] Si celui-ci est une nouvelle sauvegarde à part:"
 read PROJET
 ADRESS="https://github.com/"$COMPTE"/"$PROJET".git"
 
@@ -75,7 +75,7 @@ echo "---------------------------------------------------------"
 
 echo "--"
 echo "-- Création de votre BackUp sur le serveur"
-echo "-- [\033[37m$USER@$HOST/$GIT_PATH/$PROJET/$NOW\033[0m]"
+echo -e "-- [\033[37m$USER@$HOST/$GIT_PATH/$PROJET/$NOW\033[0m]"
 echo "--"
 
 
