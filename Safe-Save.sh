@@ -46,14 +46,14 @@ echo -e -n "Entrer le nom de votre compte [\033[35mGithub\033[0m] :"
 read COMPTE
 echo -e -n "Entrer le nom du Repository du compte [\033[35m'$COMPTE'\033[0m] dans le qu'elle vous souhaitez faire une sauvegarge :"
 read PROJET
-ADDRESS="https://github.com/"$COMPTE"/"$PROJET".git"
+ADRESS="https://github.com/"$COMPTE"/"$PROJET".git"
 
 echo -e "Vous serez connecté avec -> Compte: [\033[35m'$COMPTE'\033[0m] -> Repository: [\033[35m'$PROJET'\033[0m] "
 
 # Configure local repo
 
 echo "--"
-echo -e "-- Récupération des fichiers + Envoi vers => [\033[37m' $ADDRESS '\033[0m]"
+echo -e "-- Récupération des fichiers + Envoi vers => [\033[37m' $ADRESS '\033[0m]"
 echo "--"
 
 echo -e -n "Ajouté un [\033[37m'commentaire'\033[0m] au commit :"
@@ -64,18 +64,22 @@ git init
 git add .
 git config --global push.default simple
 git commit -m "'$now' - '$COMMENTAIRE' "
-git push --set-upstream $ADDRESS master
+git push --set-upstream $ADRESS master
 git merge master
 
 # Setup remote repo
 
+echo "---------------------------------------------------------"
+echo -e "------ Sauvegarde sur [\033[36mVPS\033[0m]"
+echo "---------------------------------------------------------"
+
 echo "--"
-echo "-- Creating bare remote repo at:"
-echo "-- $USER@$HOST/$GIT_PATH/$REPO"
+echo "-- Création de votre BackUp sur le serveur"
+echo "-- [\033[37m$USER@$HOST/$GIT_PATH/$PROJET/$NOW\033[0m]"
 echo "--"
 
 
-ssh $USER@$HOST 'mkdir '$GIT_PATH' ; mkdir '$GIT_PATH'/'$PROJET' ; mkdir '$GIT_PATH'/'$PROJET'/'$NOW' ; cd '$GIT_PATH'/'$PROJET'/'$NOW' && git init && git pull '$ADDRESS
+ssh $USER@$HOST 'mkdir '$GIT_PATH' ; mkdir '$GIT_PATH'/'$PROJET' ; mkdir '$GIT_PATH'/'$PROJET'/'$NOW' ; cd '$GIT_PATH'/'$PROJET'/'$NOW' && git init && git pull '$ADRESS
 
 
 
