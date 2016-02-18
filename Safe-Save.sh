@@ -10,20 +10,22 @@
 # Replace SSH_USERNAME, SSH_HOST, SSH_GIT_PATH with your details
 
 
-echo "----------------------------------------------"
-echo -e "------ Service BackUp [\033[32mMediashare.fr\033[0m] --------"
-echo "----------------------------------------------"
+echo "----------------------------------------------------------------------------"
+echo -e "------ Service BackUp [\033[32mMediashare.fr\033[0m]"
+echo -e "------ Création de dossier de sauvegarge sur [\033[36mVPS\033[0m]/[\033[35mGithub\033[0m]"
+echo "----------------------------------------------------------------------------"
+echo -e "------ Renseigner les informations demandés lié à votre compte [\033[36mVPS\033[0m]"
+echo "----------------------------------------------------------------------------"
 
- 
-echo -n "Utilisateur :"
+#RENSEINGNEMENT SERVEUR
+echo -e -n "Votre Compte [\033[36m'Utilisateur'\033[0m] du serveur :"
 read USER
 #USER=root
-echo -e "Ok [\033[32m'$USER'\033[0m]"
-
+echo -e "Vous serez connecté avec -> [\033[36m'$USER'\033[0m]"
 #echo -n "Serveur :"
 #read HOST
 HOST=vps241658.ovh.net
-echo -e "Votre serveur : [\033[32m'$HOST'\033[0m]"
+echo -e "Serveur de sauvegarge -> [\033[36m'$HOST'\033[0m]"
 
 REPO=${PWD##*/}
 
@@ -35,23 +37,28 @@ now="$(date)"
 
 NOW=$(echo $now|sed s/' '/'\-'/g)
 
-echo "-------------------------------------------"
-echo "------ Création du Repository/Commit --------"
-echo "-------------------------------------------"
+echo "---------------------------------------------------------"
+echo -e "------ Sauvegarde sur [\033[35mGithub\033[0m]"
+echo "---------------------------------------------------------"
 
-echo -n "Entrer le nom du Projet sur Github :"
+
+echo -e -n "Entrer le nom de votre compte [\033[35mGithub\033[0m] :"
+read COMPTE
+echo -e -n "Entrer le nom du Repository du compte [\033[35m'$COMPTE'\033[0m] dans le qu'elle vous souhaitez faire une sauvegarge :"
 read PROJET
-ADDRESS="https://github.com/Marquand/"$PROJET".git"
+ADDRESS="https://github.com/"$COMPTE"/"$PROJET".git"
+
+echo -e "Vous serez connecté avec -> Compte: [\033[35m'$COMPTE'\033[0m] -> Repository: [\033[35m'$PROJET'\033[0m] "
 
 # Configure local repo
 
 echo "--"
-echo -e "-- Récupération des fichiers + Envoi vers => [\033[32m' $ADDRESS '\033[0m]"
+echo -e "-- Récupération des fichiers + Envoi vers => [\033[37m' $ADDRESS '\033[0m]"
 echo "--"
 
-echo -n "Commentaire :"
+echo -e -n "Ajouté un [\033[37m'commentaire'\033[0m] au commit :"
 read COMMENTAIRE
-echo -e "Ok [\033[32m'$COMMENTAIRE'\033[0m]"
+echo -e "Ok [\033[37m'$COMMENTAIRE'\033[0m]"
 
 git init
 git add .
