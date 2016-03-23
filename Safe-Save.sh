@@ -64,7 +64,13 @@ git init
 git add .
 #git config --global push.default simple
 git commit -m "'$now' - '$COMMENTAIRE' "
-git push --set-upstream $ADRESS master
+if [ "$PROJET" ]
+	then
+		ADDRESS="https://gitlab.com/"$COMPTE"/"$PROJET".git"
+		git push --set-upstream $ADRESS master
+	else
+		git push --force
+	fi
 git merge master
 
 
