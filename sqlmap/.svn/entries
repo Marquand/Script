@@ -1,0 +1,123 @@
+10
+
+dir
+3630
+https://svn.sqlmap.org/sqlmap/trunk/sqlmap
+https://svn.sqlmap.org/sqlmap
+
+
+
+2011-04-11T00:33:42.400297Z
+3629
+inquisb
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+7eb2e9d7-d917-0410-b3c8-b11144ad09fb
+
+txt
+dir
+
+xml
+dir
+
+plugins
+dir
+
+sqlmap.conf
+file
+
+
+
+
+2011-04-07T09:47:37.000000Z
+28ac8a6cad0d2d8a0234b930fe68144f
+2011-04-07T10:00:47.158642Z
+3569
+inquisb
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14674
+
+extra
+dir
+
+sqlmap.py
+file
+
+
+
+
+2011-04-08T10:56:38.000000Z
+45cae394845ebe9efbeaf6840b496913
+2011-01-31T21:22:39.352117Z
+3162
+inquisb
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3226
+
+doc
+dir
+
+lib
+dir
+
+shell
+dir
+
+tamper
+dir
+
+udf
+dir
+
