@@ -12,7 +12,7 @@
 now="$(date +%Y-%m-%d)"
 #printf "%s\n" "$now"
 NOW=$(echo $now|sed s/' '/'\-'/g)
-VERSION="1.7.2 - $(echo $now)"
+VERSION="1.7.3 - $(echo $now)"
 
 echo ""
 echo "----------------------------------------------------------------------------"
@@ -23,45 +23,17 @@ echo ""
 echo ""
 echo ""
 
-echo -e -n "2 versions sont disponnibles : [\033[36mMac -> (mac)\033[0m] & [\033[32mWindows -> (win)\033[0m] :"
-read TYPE
-TYPE=${TYPE:-win}
+echo -e -n "Voulez-vous faire une mise à jour ? [\033[32mYes(y)/No(n)\033[0m] :"
+read MAJ
+MAJ=${MAJ:-y}
 
-if [ "$TYPE" = "win" ]
+if [ "$MAJ" = "y" ]
 then
-	mv GitLab-Start.sh GitLab-Start-OLD.sh
-	path=`echo "$0" | sed -e "s/[^\/]*$//"`
-	curl -o $path/maj_windows.sh "http://vps241658.ovh.net/script/GitLab-Save.sh"
-fi
-if [ "$TYPE" = "mac" ]
-then
-
-	mkdir maj
-	
-	mv GitLab-Start.sh maj/GitLab-Start-OLD.sh
-	rm GitLab-Start.sh
-	curl -o GitLab-Start.sh "http://vps241658.ovh.net/script/GitLab-Start.sh"
-	chmod 777 GitLab-Start.sh
-	echo "----------------------------------------------------------------------------"
-	echo -e "------ Launcher : [\033[36mOK\033[0m]"
+    mkdir maj
+	curl -o maj/MàJ.sh "http://vps241658.ovh.net/script/maj/MàJ.sh"
+	chmod 777 maj/MàJ.sh
 	echo ""
-	echo ""
-
-	curl -o maj/maj_windows.sh "http://vps241658.ovh.net/script/maj_windows.sh"
-	curl -o maj/maj_mac.sh "http://vps241658.ovh.net/script/maj_mac.sh"
-	echo "----------------------------------------------------------------------------"
-	echo -e "------ Config : [\033[36mOK\033[0m]"
-	echo ""
-	echo ""
-
-	mv GitLab-Save.sh maj/GitLab-Save-OLD.sh
-	rm GitLab-Save.sh
-	curl -o GitLab-Save.sh "http://vps241658.ovh.net/script/GitLab-Save.sh"
-	chmod 777 GitLab-Save.sh
-	echo "----------------------------------------------------------------------------"
-	echo -e "------ Core : [\033[36mOK\033[0m]"
-	echo ""
-	echo ""
+    bash maj/MàJ.sh
 fi
 
 echo -e -n "[\033[32mLancer GitLab-Save\033[0m] [\033[31mYes(y)/No(n)/Restart(r)\033[0m] :"

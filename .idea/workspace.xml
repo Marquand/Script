@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dba3d161-4077-4852-9fb9-d329199798d1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.bash" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/maj/MàJ.sh" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/sqlmap-dev/txt/wordlist.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test.bash" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crypter" afterPath="$PROJECT_DIR$/Crypter" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cupp" afterPath="$PROJECT_DIR$/cupp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/patator" afterPath="$PROJECT_DIR$/patator" />
@@ -11,7 +12,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crypter/crypto.py" afterPath="$PROJECT_DIR$/Crypter/crypto.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GitLab-Start.sh" afterPath="$PROJECT_DIR$/GitLab-Start.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GitLab/maj_mac.sh" afterPath="$PROJECT_DIR$/GitLab/maj_mac.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cupp/cupp.cfg" afterPath="$PROJECT_DIR$/cupp/cupp.cfg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maj/GitLab-Start-OLD.sh" afterPath="$PROJECT_DIR$/maj/GitLab-Start-OLD.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maj/maj_mac.sh" afterPath="$PROJECT_DIR$/maj/maj_mac.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/patator/README.md" afterPath="$PROJECT_DIR$/patator/README.md" />
     </list>
     <ignored path="Script.iws" />
@@ -38,21 +42,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GitLab-Save.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GitLab-Save.sh">
+      <file leaf-file-name="GitLab-Start.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GitLab-Start.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-90">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="11" />
+            <state relative-caret-position="570">
+              <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GitLab-Start.sh" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/GitLab-Start.sh">
+      <file leaf-file-name="GitLab-Save.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GitLab-Save.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="9" column="7" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MàJ.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/maj/MàJ.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="maj_mac.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GitLab/maj_mac.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -71,7 +95,10 @@
         <option value="$PROJECT_DIR$/test.sh" />
         <option value="$PROJECT_DIR$/test.bash" />
         <option value="$PROJECT_DIR$/GitLab-Save.sh" />
+        <option value="$PROJECT_DIR$/GitLab/maj_mac.sh" />
+        <option value="$PROJECT_DIR$/MàJ.sh" />
         <option value="$PROJECT_DIR$/GitLab-Start.sh" />
+        <option value="$PROJECT_DIR$/maj/MàJ.sh" />
       </list>
     </option>
   </component>
@@ -151,6 +178,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Script" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Script" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Script" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Script" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GitLab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -162,6 +217,12 @@
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="settings.editor.selected.configurable" value="web.server" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/maj" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager" selected="Bash.GitLab-Start.sh">
     <configuration default="false" name="crypto" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -206,6 +267,17 @@
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.sh" />
+      <option name="PARAMETERS" value="" />
+      <module name="Script" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="maj_mac.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/GitLab" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GitLab/maj_mac.sh" />
       <option name="PARAMETERS" value="" />
       <module name="Script" />
       <envs />
@@ -441,17 +513,19 @@
       <envs />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Bash.GitLab-Start.sh" />
       <item index="1" class="java.lang.String" itemvalue="Python.crypto" />
       <item index="2" class="java.lang.String" itemvalue="Python.backup" />
       <item index="3" class="java.lang.String" itemvalue="Bash.test.sh" />
+      <item index="4" class="java.lang.String" itemvalue="Bash.maj_mac.sh" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Bash.test.sh" />
-        <item index="1" class="java.lang.String" itemvalue="Python.backup" />
-        <item index="2" class="java.lang.String" itemvalue="Python.crypto" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Bash.maj_mac.sh" />
+        <item index="1" class="java.lang.String" itemvalue="Bash.test.sh" />
+        <item index="2" class="java.lang.String" itemvalue="Python.backup" />
+        <item index="3" class="java.lang.String" itemvalue="Python.crypto" />
       </list>
     </recent_temporary>
   </component>
@@ -568,7 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GitLab-Save-Last.sh" />
     <entry file="file://$PROJECT_DIR$/Crypter/crypto - copie.py" />
     <entry file="file://$PROJECT_DIR$/backup.py" />
     <entry file="file://$PROJECT_DIR$/Crypter/crypto.py">
@@ -595,18 +668,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/GitLab/maj_mac.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GitLab-Save-Last.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-660">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/GitLab-Save.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="11" />
+        <state relative-caret-position="135">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GitLab-Start.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+        <state relative-caret-position="570">
+          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maj/MàJ.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
           <folding />
         </state>
       </provider>
