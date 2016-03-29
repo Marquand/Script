@@ -7,7 +7,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cupp" afterPath="$PROJECT_DIR$/cupp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/patator" afterPath="$PROJECT_DIR$/patator" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sqlmap-dev" afterPath="$PROJECT_DIR$/sqlmap-dev" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Crypter/crypto.py" afterPath="$PROJECT_DIR$/Crypter/crypto.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GitLab-Start.sh" afterPath="$PROJECT_DIR$/GitLab-Start.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cupp/cupp.cfg" afterPath="$PROJECT_DIR$/cupp/cupp.cfg" />
@@ -40,8 +39,18 @@
       <file leaf-file-name="GitLab-Start.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GitLab-Start.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+            <state relative-caret-position="183">
+              <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GitLab-Save.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GitLab-Save.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="9" column="7" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -669,14 +678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GitLab-Save.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/maj/MàJ.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -685,10 +686,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/GitLab-Save.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/GitLab-Start.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        <state relative-caret-position="183">
+          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
           <folding />
         </state>
       </provider>
