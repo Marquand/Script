@@ -20,7 +20,11 @@ echo "--------------------------------------------------------------------------
 
 
 path=`echo "$0" | sed -e "s/[^\/]*$//"`
-rm GitLab-Save-Last.sh
+mkdir maj
+curl -o $path/maj/maj_windows.sh "http://vps241658.ovh.net/script/maj_windows.sh"
+curl -o $path/maj/maj_mac.sh "http://vps241658.ovh.net/script/maj_mac.sh"
+
+rm GitLab-Save.sh
 
 echo -e -n "2 versions sont disponnibles : [\033[36mMac -> (mac)\033[0m] & [\033[32mWindows -> (win)\033[0m] :"
 read TYPE
@@ -42,3 +46,6 @@ if [ "$START" = "y" ]
 then
 	bash GitLab-Save.sh
 fi
+
+rm maj_windows.sh
+rm maj_mac.sh
