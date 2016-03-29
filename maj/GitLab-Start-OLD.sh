@@ -11,8 +11,9 @@
 
 now="$(date +%Y-%m-%d)"
 #printf "%s\n" "$now"
-NOW=$(echo $now|sed s/' '/'\-'/g)
-VERSION="1.7.3 - $(echo $now)"
+NOW=$now
+#VERSION="1.7.3 - $(echo $now)"
+VERSION="1.7.4"
 
 echo ""
 echo "----------------------------------------------------------------------------"
@@ -23,7 +24,7 @@ echo ""
 echo ""
 echo ""
 
-echo -e -n "Voulez-vous faire une mise à jour ? [\033[32mYes(y)/No(n)\033[0m] :"
+echo -e -n "Voulez-vous faire une mise à jour ou une installation ? [\033[32mYes(y)/No(n)\033[0m] :"
 read MAJ
 MAJ=${MAJ:-y}
 
