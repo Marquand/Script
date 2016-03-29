@@ -18,7 +18,8 @@ echo "--------------------------------------------------------------------------
 echo -e "------ Service Mise à Jour GitLab-Save de [\033[32mMediashare.fr\033[0m]"
 echo "----------------------------------------------------------------------------"
 
-wget http://vps241658.ovh.net/script/GitLab-Start.sh && mv GitLab-Start.sh
+
+path=`echo "$0" | sed -e "s/[^\/]*$//"`
 rm GitLab-Save-Last.sh
 
 echo -e -n "2 versions sont disponnibles : [\033[36mMac -> (mac)\033[0m] & [\033[32mWindows -> (win)\033[0m] :"
@@ -27,28 +28,17 @@ TYPE=${TYPE:-win}
 
 if [ "$TYPE" = "win" ]
 then
-	ftp ftp.mediashare.fr 
-	mediashask
-	Timquand1
-	cd /server/GitLab/
-	get
-	GitLab-Save.sh 
-	GitLab-Save-Last.sh 
+	curl -o $path/maj_windows.sh "http://vps241658.ovh.net/script/maj_windows.sh"
+	./maj_windows.sh
 fi
 if [ "$TYPE" = "mac" ]
 then
 	wget http://vps241658.ovh.net/script/GitLab-Save.sh
-	mv GitLab-Save.sh GitLab-Save-Last.sh
-
 fi
 
 echo -e -n "[\033[32mLancer GitLab-Save\033[0m] [\033[31my/n\033[0m] :"
 read START
 if [ "$START" = "y" ]
 then
-	bash GitLab-Save-Last.sh
-fi
-if [ "$START" = "r" ]
-then
-	bash GitLab-Start.sh
+	bash GitLab-Save.sh
 fi
