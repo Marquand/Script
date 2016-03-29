@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2187e4a7-82ca-4216-be9b-8764e02c0faf" name="VPS - Script" url="http://vps241658.ovh.net/script">
+        <fileTransfer host="vps241658.ovh.net" port="22" rootFolder="/var/www/script" accessType="SFTP" password="dffedfc3dfc7dfdbdfdfdfcbdfc4dfcedf9b" username="root">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

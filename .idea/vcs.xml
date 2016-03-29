@@ -2,5 +2,11 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Crypter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/SSH-Brute-Forcer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cupp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/patator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/slowloris.pl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sqlmap-dev" vcs="Git" />
   </component>
 </project>
