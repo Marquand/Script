@@ -9,11 +9,10 @@
 # Configuration
 # Replace SSH_USERNAME, SSH_HOST, SSH_GIT_PATH with your details
 
-now="$(date)"
+now="$(date +%Y-%m-%d)"
 #printf "%s\n" "$now"
 NOW=$(echo $now|sed s/' '/'\-'/g)
-
-VERSION=1.7.2
+VERSION="1.7.2 - $(echo $now)"
 
 echo ""
 echo "----------------------------------------------------------------------------"
