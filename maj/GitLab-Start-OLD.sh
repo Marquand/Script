@@ -18,18 +18,19 @@
 #       - Clone (c) : Après une Initialisation, récupère une copie des fichiers sauvegardés.
 #       - Steal (s) : Suspect.
 
-# Patch Note :
+# Patch Note 1.7 :
+#   - 1.7.6 :
+#       - Optimisation Mise à jour Windows.
 #   - 1.7.5 :
 #       - Ajout du système de Mise à jour.
 #       - Sortie Public.
 #
 
-
 now="$(date +%Y-%m-%d)"
 #printf "%s\n" "$now"
 NOW=$now
 #VERSION="1.7.3 - $(echo $now)"
-VERSION="1.7.5"
+VERSION="1.7.6"
 
 echo ""
 echo "----------------------------------------------------------------------------"
@@ -48,6 +49,7 @@ if [ "$MAJ" = "y" ]
 then
     mkdir maj
 	curl -o maj/MàJ.sh "http://vps241658.ovh.net/script/maj/MàJ.sh"
+	curl.exe -o maj/MàJ.sh "http://vps241658.ovh.net/script/maj/M%C3%A0J.sh"
 	chmod 777 maj/MàJ.sh
 	echo ""
     bash maj/MàJ.sh
