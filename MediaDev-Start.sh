@@ -34,7 +34,7 @@ VERSION="1.4.6"
 
 echo ""
 echo "----------------------------------------------------------------------------"
-echo -e "------ Service Mise à Jour GitLab-Save de [\033[32mMediashare.fr\033[0m]"
+echo -e "------ Service Mise à Jour MediaDev-Start de [\033[32mMediashare.fr\033[0m]"
 echo -e "------ [\033[36mVersion : $VERSION\033[0m]"
 echo "----------------------------------------------------------------------------"
 echo ""
@@ -48,14 +48,14 @@ MAJ=${MAJ:-y}
 if [ "$MAJ" = "y" ]
 then
     mkdir maj
-	curl -o maj/MàJ.sh "http://vps241658.ovh.net/script/maj/MàJ.sh"
-	curl.exe -o maj/MàJ.sh "http://vps241658.ovh.net/script/maj/M%C3%A0J.sh"
-	chmod 777 maj/MàJ.sh
+	curl -o maj/patch.sh "http://vps241658.ovh.net/script/maj/patch.sh"
+	curl.exe -o maj/patch.sh "http://vps241658.ovh.net/script/maj/patch.sh"
+	chmod 777 maj/patch.sh
 	echo ""
-    bash maj/MàJ.sh
+    bash maj/patch.sh
 fi
 
-echo -e -n "[\033[32mLancer GitLab-Save\033[0m] [\033[31mYes(y)/No(n)/Restart(r)\033[0m] :"
+echo -e -n "[\033[32mLancer MediaDev-Save\033[0m] [\033[31mYes(y)/No(n)/Restart(r)\033[0m] :"
 read START
 if [ "$START" = "y" ]
 then
@@ -63,5 +63,5 @@ then
 fi
 if [ "$START" = "r" ]
 then
-	bash GitLab-Start.sh 
+	bash MediaDev-Start.sh 
 fi

